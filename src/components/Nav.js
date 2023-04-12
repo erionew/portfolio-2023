@@ -12,7 +12,7 @@ export default function Nav({homeLink, skillsLink, projectsLink, contactLink}) {
       <div className='mobile-nav--container'>
         <div className='mobile-nav'>
             <button onClick={handleMenuClick}><i className="las la-bars"></i></button>
-            
+            <p className='nav__name'>erione white</p>
         </div>
         <ul className='mobile--nav__links nav-links__ul'>
             <li className='nav-links__li'><a href={homeLink} className='nav-links__link'>Home</a></li>
@@ -22,7 +22,15 @@ export default function Nav({homeLink, skillsLink, projectsLink, contactLink}) {
         </ul>
       </div>
 
-      <p className='nav__name'>erione white</p>
+      <div className='desktop-nav--container'>
+        <ul className='desktop--nav_links nav-links__ul'>
+            <li className='nav-links__li'><a href={homeLink} className='nav-links__link'>Home</a></li>
+            <li className='nav-links__li'><a href={skillsLink} className='nav-links__link'>Skills</a></li>
+            <li className='nav-links__li'><a href={projectsLink} className='nav-links__link'>Projects</a></li>
+            <li className='nav-links__li'><a href={contactLink} className='nav-links__link'>Contact</a></li>
+        </ul>
+        <p className='nav__name'>erione white</p>
+      </div>
     </nav>
   )
 }
