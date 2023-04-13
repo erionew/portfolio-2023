@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1em;
+    height: 50px;
     width: 100%;
     background-color: #EFEFEF;
     border: none;
@@ -30,6 +31,7 @@
 }
 
 .mobile--nav__links{
+    z-index: 10;
     position: absolute;
     top: -400px;
     left: 0;
@@ -56,6 +58,16 @@
     margin: 1.5em 0;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.nav-links__link{
+    transition: letter-spacing 200ms ease;
+}
+
+.nav-links__link:hover{
+    cursor: pointer;
+    color: #3a3a3a;
+    letter-spacing: 4px;
 }
 
 .nav__name{

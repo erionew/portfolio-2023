@@ -9,3 +9,34 @@ body{
     background-color: #EFEFEF;
     color: #727272;
 }
+
+container--main{
+    position: relative;
+}
+
+h1, h2, h3{
+    margin: 0.5em;
+    font-weight: 200;
+}
+
+strong{
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+.page{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .page{
+        padding-left: 200px;
+    }
+    
+}
