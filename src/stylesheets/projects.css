@@ -64,6 +64,7 @@
     border: 1px solid #fff;
 }
 
+
 @media screen and (min-width: 900px) {
     .container--projects{
         flex-direction: row;
