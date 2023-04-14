@@ -11,7 +11,7 @@ export default function Contact() {
       </div>
       <div className='contact__info'>
         <i className="fa-brands fa-linkedin"></i>
-        <a href='https://www.linkedin.com/in/erione-white-68a676262/'  target="_blank">Erione White</a>
+        <a href='https://www.linkedin.com/in/erione-white-68a676262/'  target='_blank'>Erione White</a>
       </div>
     </div>
   )
