@@ -7,11 +7,11 @@ export default function Project({img, name, liveLink, repoLink}) {
     const handleClick = (e) => {
         setInforShown(!infoShown)
         if(infoShown){
-          if(e.target.className == 'project__info'){
+          if(e.target.className === 'project__info'){
             e.target.style.opacity = 1
           }
         } else {
-          if(e.target.className == 'project__info'){
+          if(e.target.className === 'project__info'){
             e.target.style.opacity = 0
           }
         }
@@ -30,7 +30,7 @@ export default function Project({img, name, liveLink, repoLink}) {
 
   return (
     <div className='container--project'>
-      <img className='project__img' src={img}></img>
+      <img className='project__img' src={img} alt="website screenshot"></img>
       <div onClick={handleClick} onMouseOver={showInfo} onMouseLeave={hideInfo}className='project__info'>
         <h2 className='project__name'><strong>{name}</strong></h2>
         <div className='project__link-container'>
