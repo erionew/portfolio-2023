@@ -10,9 +10,10 @@ function App() {
   return (
     <div className="container--main">
 
-      <Nav />
+      <Nav homeLink={'/'} skillsLink={'/skills'} projectsLink={'/'} contactLink={'/'} />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/skills' element={<Skills />} />
       </Routes>
     </div>
   );

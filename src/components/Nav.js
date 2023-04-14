@@ -6,7 +6,9 @@ export default function Nav({homeLink, skillsLink, projectsLink, contactLink}) {
     const handleMenuClick = (e) => {
         document.querySelector('.mobile--nav__links').classList.toggle('active')
     }
-    
+    const handleLinkClick = (e) => {
+      document.querySelector('.mobile--nav__links').classList.toggle('active')
+    }
     return (
     <nav className='container--nav'>
       <div className='mobile-nav--container'>
@@ -15,10 +17,10 @@ export default function Nav({homeLink, skillsLink, projectsLink, contactLink}) {
             <p className='nav__name'>erione white</p>
         </div>
         <ul className='mobile--nav__links nav-links__ul'>
-            <li className='nav-links__li'><Link to={homeLink} className='nav-links__link'>Home</Link></li>
-            <li className='nav-links__li'><Link to={skillsLink} className='nav-links__link'>Skills</Link></li>
-            <li className='nav-links__li'><Link to={projectsLink} className='nav-links__link'>Projects</Link></li>
-            <li className='nav-links__li'><Link to={contactLink} className='nav-links__link'>Contact</Link></li>
+            <li className='nav-links__li'><Link onClick={handleLinkClick} to={homeLink} className='nav-links__link'>Home</Link></li>
+            <li className='nav-links__li'><Link onClick={handleLinkClick} to={skillsLink} className='nav-links__link'>Skills</Link></li>
+            <li className='nav-links__li'><Link onClick={handleLinkClick} to={projectsLink} className='nav-links__link'>Projects</Link></li>
+            <li className='nav-links__li'><Link onClick={handleLinkClick} to={contactLink} className='nav-links__link'>Contact</Link></li>
         </ul>
       </div>
 
