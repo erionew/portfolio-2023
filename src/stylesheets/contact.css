@@ -1,0 +1,24 @@
+.contact__info{
+    display: flex;
+    align-items: center;
+    padding: 1.25em;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.contact__info:first-of-type{
+    border-bottom: 1px solid #ccc;
+}
+
+.contact__info > i{
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+.contact__info > a {
+    font-weight: 300;
+    transition: font-weight 200ms linear;
+}
+
+.contact__info > a:hover {
+    font-weight: 600;
+}

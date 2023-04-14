@@ -1,9 +1,11 @@
 import React from 'react'
+import '../stylesheets/skills.css'
 
 export default function Skills() {
+
   return (
     <div className='container--skills page'>
-      <p>I make websites come to life with these skills, tools, and technologies.</p>
+      <h2>I make websites come to life with these skills, tools, and technologies.</h2>
         <div className='skills__icons'>
           <i className="fa-brands fa-html5"></i>
           <i className="fa-brands fa-css3-alt"></i>
@@ -11,7 +13,7 @@ export default function Skills() {
           <i className="fa-brands fa-react"></i>
           <i className="fa-brands fa-github"></i>
         </div>
-      <p>Here is what I'm learning right now: </p>
+      <h2>Here is what I'm learning right now: </h2>
         <div className='skills__icons'>
           <i className="fa-brands fa-python"></i>
         </div>
