@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import { Route, Routes } from 'react-router-dom';
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
